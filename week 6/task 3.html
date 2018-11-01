@@ -2,6 +2,13 @@
 <html>
 
   <head>
+  	<script>
+		function myFunction() {
+			document.querySelector("#items").innerHTML = 0;
+        	document.querySelector("#sum").innerHTML = 0;
+        	
+	}
+</script>
     <style>
 		#cars{
 			display: flex;
@@ -32,6 +39,7 @@
   </head>
 
   <body>
+  	<button onclick="myFunction()">Refresh!</button>
     <div id="insideBasket"><span id="items">0</span> items, total: <span id="sum">0</span>$</div>
     <div id="cars">
       
